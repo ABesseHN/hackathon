@@ -1,0 +1,214 @@
+<main class="flex-1 p-6 lg:p-10">
+        <div class="mx-auto max-w-7xl">
+          <!-- PageHeading -->
+          <header class="flex flex-wrap items-center justify-between gap-4 mb-8">
+            <div class="flex min-w-72 flex-col gap-2">
+              <h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em]">Inscriptions des Participants
+              </h1>
+              <p class="text-white/60 text-base font-normal leading-normal">128 Participants inscrits</p>
+            </div>
+            <button
+              class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+              <span class="truncate">Exporter la liste</span>
+            </button>
+          </header>
+          <!-- Search and Filters -->
+          <div class="mb-6 flex flex-col sm:flex-row gap-4">
+            <!-- SearchBar -->
+            <div class="flex-grow">
+              <label class="flex flex-col h-12 w-full">
+                <div class="flex w-full flex-1 items-stretch rounded-lg h-full bg-[#2A1E3D]">
+                  <div class="text-white/60 flex items-center justify-center pl-4">
+                    <span class="material-symbols-outlined">search</span>
+                  </div>
+                  <input
+                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border-none bg-transparent h-full placeholder:text-white/60 px-4 pl-2 text-base font-normal leading-normal"
+                    placeholder="Rechercher par pseudo..." value="" />
+                </div>
+              </label>
+            </div>
+            <!-- Chips -->
+            <div class="flex items-center gap-2 overflow-x-auto pb-2">
+              <button class="flex h-12 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#2A1E3D] px-4">
+                <p class="text-white text-sm font-medium leading-normal">Filtrer par compétence</p>
+                <span class="material-symbols-outlined text-white/80">arrow_drop_down</span>
+              </button>
+              <button
+                class="flex h-12 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#2A1E3D] px-4 hover:bg-primary/30">
+                <p class="text-white text-sm font-medium leading-normal">Python</p>
+              </button>
+              <button
+                class="flex h-12 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#2A1E3D] px-4 hover:bg-primary/30">
+                <p class="text-white text-sm font-medium leading-normal">UI/UX</p>
+              </button>
+              <button class="flex h-12 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/30 px-4">
+                <p class="text-white text-sm font-medium leading-normal">Data Science</p>
+              </button>
+              <button
+                class="flex h-12 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#2A1E3D] px-4 hover:bg-primary/30">
+                <p class="text-white text-sm font-medium leading-normal">React</p>
+              </button>
+            </div>
+          </div>
+          <!-- ImageGrid -->
+          <div class="grid grid-cols-[repeat(auto-fill,minmax(220px,1fr))] gap-6">
+            <div
+              class="flex flex-col gap-4 text-center p-6 bg-[#2A1E3D] rounded-xl border border-transparent hover:border-primary/50 transition-colors cursor-pointer">
+              <div class="mx-auto">
+                <div class="w-24 h-24 bg-center bg-no-repeat aspect-square bg-cover rounded-full"
+                  data-alt="Avatar for CodeNinja77"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA1wEmhgiNwrircQgGi5FJtrEYly4sF-41GsuP07-HRF7m7Tz1SLJZhgqnjgO78hrrxvhiqkVQl99yJiuTQysciuyHrkjVIoH9q-zSSm-Jko-VGkXoL6LAgpmZ3NY4EPPDNHKOOV62K1hoaHk60tuyCezm9pCPmlC5mGkeycJyoAPBrLx8iBvaN0vEVdfG5rzQMFoFxyjHY8woUyKpyPdC7MBTnCnzIVtrCnRiY6UtRgb9xtB_Gx-T4FrqMXfuNJeYnnwjoGzCqL60");'>
+                </div>
+              </div>
+              <div>
+                <p class="text-white text-lg font-bold leading-normal">CodeNinja77</p>
+                <div class="flex flex-wrap justify-center gap-2 mt-3">
+                  <span class="px-2 py-1 text-xs font-medium text-primary bg-primary/20 rounded-full">Python</span>
+                  <span class="px-2 py-1 text-xs font-medium text-primary bg-primary/20 rounded-full">React</span>
+                  <span class="px-2 py-1 text-xs font-medium text-primary bg-primary/20 rounded-full">API REST</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col gap-4 text-center p-6 bg-[#2A1E3D] rounded-xl border border-transparent hover:border-primary/50 transition-colors cursor-pointer">
+              <div class="mx-auto">
+                <div class="w-24 h-24 bg-center bg-no-repeat aspect-square bg-cover rounded-full"
+                  data-alt="Avatar for CyberGamerX"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAfeRKJeE8sMJyEQKVeM6V1jXg-GDZAzYLRDwLBVehMnXWNpb5__N3Sql0giG8B9spmV325gW6IINGhMG1r-ramMzuAvR-ov1jc_PQ7s3ASbAHG6vhyMGbNmWchOTRhJJzCVrnl_rCgDMs4Vn5VqN85iAdVNlde3U7YtkxakreSyPDKUlOHsLvFI1ljBU_U2LcZLgtuJLtFXSzuvghYTMQlCH-eru8qucBWjVwfoQFlaEXDea4V9ptb-8rrfsLLVZXYR13yksHlhW0");'>
+                </div>
+              </div>
+              <div>
+                <p class="text-white text-lg font-bold leading-normal">CyberGamerX</p>
+                <div class="flex flex-wrap justify-center gap-2 mt-3">
+                  <span class="px-2 py-1 text-xs font-medium text-primary bg-primary/20 rounded-full">Java</span>
+                  <span class="px-2 py-1 text-xs font-medium text-primary bg-primary/20 rounded-full">C++</span>
+                  <span class="px-2 py-1 text-xs font-medium text-primary bg-primary/20 rounded-full">Game Dev</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col gap-4 text-center p-6 bg-[#2A1E3D] rounded-xl border border-transparent hover:border-primary/50 transition-colors cursor-pointer">
+              <div class="mx-auto">
+                <div class="w-24 h-24 bg-center bg-no-repeat aspect-square bg-cover rounded-full"
+                  data-alt="Avatar for DataWiz"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDwTJ89lKmlvgt3a2XHFEcFcLnKT1Ho8slee_cQ2bpcIvbPKYJbcvl6JpOBdeJHw3nnGKSf7F-dPQwavn6J_mg05j2KJN73YzxOz-ftL7C0Gfnyn7NPds-O74P3CakkLkUzCO4NGZo9ub9fsN3XavsVpV4TssQGjvRKZE-4WU6ni8RdrUsuzxGsxCz9g-Y0hwwaowDzXPb8tIwPzXemZwJ66m3mIMtwfsto70zyeV7YSNNjtFMsmvfTAjnNjnEmxv8LRNdes4eCRQ4");'>
+                </div>
+              </div>
+              <div>
+                <p class="text-white text-lg font-bold leading-normal">DataWiz</p>
+                <div class="flex flex-wrap justify-center gap-2 mt-3">
+                  <span class="px-2 py-1 text-xs font-medium text-primary bg-primary/20 rounded-full">Python</span>
+                  <span class="px-2 py-1 text-xs font-medium text-primary bg-primary/20 rounded-full">SQL</span>
+                  <span class="px-2 py-1 text-xs font-medium text-primary bg-primary/20 rounded-full">Data
+                    Science</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col gap-4 text-center p-6 bg-[#2A1E3D] rounded-xl border border-transparent hover:border-primary/50 transition-colors cursor-pointer">
+              <div class="mx-auto">
+                <div class="w-24 h-24 bg-center bg-no-repeat aspect-square bg-cover rounded-full"
+                  data-alt="Avatar for ReactDevPro"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDi5GFT_P_Hd8NPk0_WCzbX_f9wXvhfoOfbg5e2B6OuVZPMRVyhoNhp1LJa3CD3ESfFvvLIUauc-tQVDnEXWCbg_xb75aXhMR_btayqTOrlG0JerLfzyUJ681g0Z05Z_2Ye-uB3WcZa5Kbo5SLz0O15U_RG_WriHPyeYC4LCj14RDW7Abi5wKAh_ky7Me_Tz_S6gA885CPSE1knigClrRXVhRkdGcEViP4f95LpBZ0EuXM5gShKA3BQnOD23bv6uILxJL4BhVVa5aY");'>
+                </div>
+              </div>
+              <div>
+                <p class="text-white text-lg font-bold leading-normal">ReactDevPro</p>
+                <div class="flex flex-wrap justify-center gap-2 mt-3">
+                  <span class="px-2 py-1 text-xs font-medium text-primary bg-primary/20 rounded-full">React</span>
+                  <span class="px-2 py-1 text-xs font-medium text-primary bg-primary/20 rounded-full">JavaScript</span>
+                  <span class="px-2 py-1 text-xs font-medium text-primary bg-primary/20 rounded-full">UI/UX</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col gap-4 text-center p-6 bg-[#2A1E3D] rounded-xl border border-transparent hover:border-primary/50 transition-colors cursor-pointer">
+              <div class="mx-auto">
+                <div class="w-24 h-24 bg-center bg-no-repeat aspect-square bg-cover rounded-full"
+                  data-alt="Avatar for PixelPerfect"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAinFFhFRT6e1WAT1I1z-bU-ulvnsLFwxb5HaQxebl_d9Lta-FIvAzR3I-1Zz01yiPSyyiPhCVCKpcTnD4u1a9bcYWpg7qF7u7JpwmzAbwnj84XYAZudyghp72ocqD5i_62QM5_X2QDCoJ4hLqCdTpqV4Hy-mAcAxUHszZpXrNm6AdaYCYCj4z18GdMR1irrEV0e1ZpvWItiR5hC4xe0H4fdkgSxoRrpveSCaWkbLkRYg-v4vFDplzlovUkTC5kSncaLnacfmQ2xQs");'>
+                </div>
+              </div>
+              <div>
+                <p class="text-white text-lg font-bold leading-normal">PixelPerfect</p>
+                <div class="flex flex-wrap justify-center gap-2 mt-3">
+                  <span class="px-2 py-1 text-xs font-medium text-primary bg-primary/20 rounded-full">UI/UX</span>
+                  <span class="px-2 py-1 text-xs font-medium text-primary bg-primary/20 rounded-full">Figma</span>
+                  <span class="px-2 py-1 text-xs font-medium text-primary bg-primary/20 rounded-full">CSS</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col gap-4 text-center p-6 bg-[#2A1E3D] rounded-xl border border-transparent hover:border-primary/50 transition-colors cursor-pointer">
+              <div class="mx-auto">
+                <div class="w-24 h-24 bg-center bg-no-repeat aspect-square bg-cover rounded-full"
+                  data-alt="Avatar for APIMaster"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBNGH0e9Jg-7TX-H8eBlpur-HCl2Nm8qjfta3WriVagLXyKdNshagCVnbCwl78jTQltRHS2xurQKFeVnjop2BJurBJ0VQbFHFPoUgFiPHbg78ZSHU8sbUN4c-FqnxzD8TrLSPjmwCTXmw6bkh7-te6pbW9jBj4hYdabVsOmF7ANVW93q5O7QrCnBUIgyzDPo5gMfxdDRZLSW9w28pFo9c7EiVuvTqQdUOeCT3qA8jaJXf9z2sN8VRunREyWBgqcfqQvbIDb6F4M2Gs");'>
+                </div>
+              </div>
+              <div>
+                <p class="text-white text-lg font-bold leading-normal">APIMaster</p>
+                <div class="flex flex-wrap justify-center gap-2 mt-3">
+                  <span class="px-2 py-1 text-xs font-medium text-primary bg-primary/20 rounded-full">API REST</span>
+                  <span class="px-2 py-1 text-xs font-medium text-primary bg-primary/20 rounded-full">Node.js</span>
+                  <span class="px-2 py-1 text-xs font-medium text-primary bg-primary/20 rounded-full">Python</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col gap-4 text-center p-6 bg-[#2A1E3D] rounded-xl border border-transparent hover:border-primary/50 transition-colors cursor-pointer">
+              <div class="mx-auto">
+                <div class="w-24 h-24 bg-center bg-no-repeat aspect-square bg-cover rounded-full"
+                  data-alt="Avatar for DevQueen"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCTpU3JrmqTIiWAMqWvKLzynI5ih7l25lBKJFIxts2WLrxqCTAznIg5L2o0Dy7PDRc0uMZnEH01b672n14UW6TdV2pNI-DXgGkhuHJC8PQZe2XP43sv8s2xcGeJTw3CR-CXSJ0hdq0xYc1j_wAgbCwWyE6RLCLggDr7OFTvhmYgxMvMHEAmG-5y2c1KbqCE2R8mK32i3_odBFrAP5GCg1qc-U_SX0thI74TyVXNYfP230ttnaeU8zapGnQEw25apz_dkxjKWoLgYwM");'>
+                </div>
+              </div>
+              <div>
+                <p class="text-white text-lg font-bold leading-normal">DevQueen</p>
+                <div class="flex flex-wrap justify-center gap-2 mt-3">
+                  <span class="px-2 py-1 text-xs font-medium text-primary bg-primary/20 rounded-full">JavaScript</span>
+                  <span class="px-2 py-1 text-xs font-medium text-primary bg-primary/20 rounded-full">HTML</span>
+                  <span class="px-2 py-1 text-xs font-medium text-primary bg-primary/20 rounded-full">CSS</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col gap-4 text-center p-6 bg-[#2A1E3D] rounded-xl border border-transparent hover:border-primary/50 transition-colors cursor-pointer">
+              <div class="mx-auto">
+                <div class="w-24 h-24 bg-center bg-no-repeat aspect-square bg-cover rounded-full"
+                  data-alt="Avatar for KernelKing"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB15iqVv7XEmAx9Jzp_yQonc5nzxwp0PlCFA7DWmNMdLjGILnzFAiS2UkQVW0CrOmwWMGlII2zoD_FS9EPQH-ue7SvMBby5drWZaI_1grrOo_dZUgNczNRu_hhPOkfx4N9p-8V42kSqpLTENTWSzHWptZVr7jRNbtoib6gyhBLpkzHrCMeU4M__yC_HG-4M8KfDNcwVLZiSp49F2xPDZoX3nydvE_qVcT3Tl26l3F768BAqXwi5Y6PndSPb_gm_eVJTQ3MNG734lr8");'>
+                </div>
+              </div>
+              <div>
+                <p class="text-white text-lg font-bold leading-normal">KernelKing</p>
+                <div class="flex flex-wrap justify-center gap-2 mt-3">
+                  <span class="px-2 py-1 text-xs font-medium text-primary bg-primary/20 rounded-full">C</span>
+                  <span class="px-2 py-1 text-xs font-medium text-primary bg-primary/20 rounded-full">Linux</span>
+                  <span class="px-2 py-1 text-xs font-medium text-primary bg-primary/20 rounded-full">Systems</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Pagination -->
+          <div class="mt-8 flex justify-center items-center gap-2 text-sm">
+            <button
+              class="flex items-center justify-center size-8 rounded-lg hover:bg-white/10 transition-colors text-white/60">
+              <span class="material-symbols-outlined text-base">chevron_left</span>
+            </button>
+            <button
+              class="flex items-center justify-center size-8 rounded-lg bg-primary/20 text-white font-bold">1</button>
+            <button
+              class="flex items-center justify-center size-8 rounded-lg hover:bg-white/10 transition-colors text-white/80">2</button>
+            <button
+              class="flex items-center justify-center size-8 rounded-lg hover:bg-white/10 transition-colors text-white/80">3</button>
+            <span class="text-white/60">...</span>
+            <button
+              class="flex items-center justify-center size-8 rounded-lg hover:bg-white/10 transition-colors text-white/80">8</button>
+            <button
+              class="flex items-center justify-center size-8 rounded-lg hover:bg-white/10 transition-colors text-white/60">
+              <span class="material-symbols-outlined text-base">chevron_right</span>
+            </button>
+          </div>
+        </div>
+      </main>

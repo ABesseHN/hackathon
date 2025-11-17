@@ -1,0 +1,60 @@
+<div class="flex w-full max-w-6xl flex-col items-center gap-12 lg:gap-16">
+    <div class="flex flex-col items-center gap-6 text-center">
+        <div class="flex h-24 w-24 items-center justify-center rounded-full bg-primary/10 text-primary">
+            <span class="material-symbols-outlined !text-5xl">hourglass_empty</span>
+        </div>
+        <div class="flex max-w-2xl flex-col items-center gap-2">
+            <h1 class="text-3xl font-bold leading-tight tracking-tighter text-zinc-100 sm:text-4xl md:text-5xl">
+                Un peu de calme avant la prochaine tempête d'idées.</h1>
+            <p class="text-base text-zinc-400 sm:text-lg">L'équipe prépare activement les prochains
+                événements. En attendant, explorez ce que vous pouvez faire d'autre.</p>
+        </div>
+    </div>
+    <div class="grid w-full grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div
+            class="flex flex-col gap-4 rounded-xl border border-white/10 bg-white/5 p-6 transition-all hover:border-primary/50 hover:bg-white/10">
+            <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 text-primary">
+                <span class="material-symbols-outlined !text-3xl">history</span>
+            </div>
+            <div class="flex flex-col gap-2">
+                <h3 class="text-lg font-bold text-zinc-100">Explorez les défis passés</h3>
+                <p class="text-sm text-zinc-400">Revivez les moments forts et inspirez-vous des projets
+                    gagnants des éditions précédentes.</p>
+            </div>
+            <button
+                class="mt-auto flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-zinc-800 text-sm font-bold leading-normal text-white transition-colors hover:bg-zinc-700">
+                <span class="truncate">Voir les archives</span>
+            </button>
+        </div>
+        <div
+            class="flex flex-col gap-4 rounded-xl border border-white/10 bg-white/5 p-6 transition-all hover:border-primary/50 hover:bg-white/10">
+            <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 text-primary">
+                <span class="material-symbols-outlined !text-3xl">lightbulb</span>
+            </div>
+            <div class="flex flex-col gap-2">
+                <h3 class="text-lg font-bold text-zinc-100">Proposez le prochain challenge</h3>
+                <p class="text-sm text-zinc-400">Une idée brillante pour un futur hackathon ?
+                    Partagez-la avec nous dès maintenant !</p>
+            </div>
+            <button (click)="goToAddTopic()"
+                class="mt-auto flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-sm font-bold leading-normal text-white transition-opacity hover:opacity-90">
+                <span class="truncate">Soumettre une idée</span>
+            </button>
+        </div>
+        <div
+            class="flex flex-col gap-4 rounded-xl border border-white/10 bg-white/5 p-6 transition-all hover:border-primary/50 hover:bg-white/10">
+            <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 text-primary">
+                <span class="material-symbols-outlined !text-3xl">person_add</span>
+            </div>
+            <div class="flex flex-col gap-2">
+                <h3 class="text-lg font-bold text-zinc-100">Inscrivez-vous</h3>
+                <p class="text-sm text-zinc-400">Ne manquez pas le prochain hackathon. Inscrivez-vous dès maintenant !
+                </p>
+            </div>
+            <button (click)="goToRegister()"
+                class="mt-auto flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-zinc-800 text-sm font-bold leading-normal text-white transition-colors hover:bg-zinc-700">
+                <span class="truncate">Inscription</span>
+            </button>
+        </div>
+    </div>
+</div>
