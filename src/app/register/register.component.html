@@ -1,97 +1,80 @@
- <div class="relative flex min-h-screen w-full flex-col items-center main-bg">
-        <!-- <header class="w-full max-w-5xl px-4 sm:px-6 lg:px-8 py-5 z-10">
-            <div class="flex items-center justify-between whitespace-nowrap border-b border-slate-200/10 pb-4">
-                <div class="flex items-center gap-4 text-slate-200">
-                    <div class="h-8 w-8 text-slate-200">
-                        <svg fill="currentColor" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M49.2,33.4h22.6v62.1h-4.3V78.2h-2.1v17.3h-4.3V78.2h-2.1v17.3h-4.3V78.2h-2.1v17.3h-3.4V33.4z M125.7,33.4H151c14,0,23,8.7,23,20.4c0,9.9-6,16.2-14.8,18.7l17.4,26.4h-5.2l-16.7-25.7h-7.6v25.7h-4.3V33.4z M149.3,50.7c4.6,0,7.9-2.9,7.9-6.7s-3.3-6.5-7.9-6.5h-19.3v13.1H149.3z M24.2,106.8H20V33.4h4.3v73.4z M174.1,106.8h4.3V33.4h-4.3v73.4z M20,111.1h158.4v4.3H20v-4.3z M103.1,33.4h4.3v73.4h-4.3V33.4z M85.1,106.8V33.4h4.3v73.4H85.1z M85.1,49.5h18v4.3h-18v-4.3zM85.1,72.4h18v4.3h-18v-4.3z">
-                            </path>
-                        </svg>
+<main class="flex w-full max-w-5xl flex-1 flex-col items-center justify-center p-4 sm:p-6 lg:p-8 z-10">
+    <div class="w-full max-w-2xl">
+        <div class="text-center mb-10">
+            <h1 class="text-slate-50 text-4xl sm:text-5xl font-black tracking-tighter">Rejoignez l'aventure !
+            </h1>
+            <p class="text-slate-400 text-lg mt-3">Créez votre profil pour participer à notre prochain
+                hackathon.</p>
+        </div>
+        <div
+            class="bg-slate-800/20 backdrop-blur-lg p-6 sm:p-10 rounded-xl border border-slate-200/10 shadow-2xl shadow-primary/20">
+            <form class="flex flex-col gap-8">
+                <div class="flex flex-col sm:flex-row items-center gap-6">
+                    <div class="flex-shrink-0">
+                        <img alt="Avatar"
+                            class="h-20 w-20 rounded-full object-cover border-4 border-slate-700/50 shadow-sm"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmNVTeemH15nxcJ9dmVuTTwRwzpFpi4n4J-OVVUgjlA5_jOqCVRieaa8_Iqu37mROucdn8cXZaI_cefoJB2S8Grl70yUolcFMoH7kcoY7LCliQiQm8p3TwmoxSbKILg9ITaVrgzOYySthh4oPW4MWJoELUQX_6p81dkUirOOR4sPger5qaDlNBnVrW405NQdtFScGxfaWtrnA1WXNW6Q7Yzc_BvBY0o-3sq_ZoB5T7JnsKW6oxtYgfgWMrCiI_X-tElsSAsXH3b8I" />
                     </div>
-                    <h2 class="text-xl font-bold tracking-tight">HN Service Hackathon</h2>
-                </div>
-            </div>
-        </header> -->
-        <main class="flex w-full max-w-5xl flex-1 flex-col items-center justify-center p-4 sm:p-6 lg:p-8 z-10">
-            <div class="w-full max-w-2xl">
-                <div class="text-center mb-10">
-                    <h1 class="text-slate-50 text-4xl sm:text-5xl font-black tracking-tighter">Rejoignez l'aventure !
-                    </h1>
-                    <p class="text-slate-400 text-lg mt-3">Créez votre profil pour participer à notre prochain
-                        hackathon.</p>
-                </div>
-                <div
-                    class="bg-slate-800/20 backdrop-blur-lg p-6 sm:p-10 rounded-xl border border-slate-200/10 shadow-2xl shadow-primary/20">
-                    <form class="flex flex-col gap-8">
-                        <div class="flex flex-col sm:flex-row items-center gap-6">
-                            <div class="flex-shrink-0">
-                                <img alt="Avatar"
-                                    class="h-20 w-20 rounded-full object-cover border-4 border-slate-700/50 shadow-sm"
-                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmNVTeemH15nxcJ9dmVuTTwRwzpFpi4n4J-OVVUgjlA5_jOqCVRieaa8_Iqu37mROucdn8cXZaI_cefoJB2S8Grl70yUolcFMoH7kcoY7LCliQiQm8p3TwmoxSbKILg9ITaVrgzOYySthh4oPW4MWJoELUQX_6p81dkUirOOR4sPger5qaDlNBnVrW405NQdtFScGxfaWtrnA1WXNW6Q7Yzc_BvBY0o-3sq_ZoB5T7JnsKW6oxtYgfgWMrCiI_X-tElsSAsXH3b8I" />
-                            </div>
-                            <div class="flex flex-col gap-2 flex-1 w-full">
-                                <label class="text-slate-200 text-base font-medium" for="avatar-upload">Votre
-                                    avatar</label>
-                                <div class="relative">
-                                    <input
-                                        class="block w-full text-sm text-slate-300 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-primary/20 file:text-primary-light hover:file:bg-primary/30 cursor-pointer bg-slate-700/30 rounded-lg"
-                                        id="avatar-upload" type="file" />
-                                </div>
-                                <p class="text-xs text-slate-400 mt-1">PNG, JPG, GIF jusqu'à 5MB.</p>
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-2">
-                            <label class="text-slate-200 text-base font-medium" for="pseudo">Votre pseudo</label>
-                            <div class="relative flex w-full items-center">
-                                <input
-                                    class="form-input h-12 w-full flex-1 rounded-lg border-slate-700/50 bg-slate-700/30 px-4 pl-12 text-slate-100 placeholder:text-slate-400 focus:border-primary focus:ring-primary"
-                                    id="pseudo" placeholder="Entrez un pseudo unique" type="text" />
-                                <div
-                                    class="pointer-events-none absolute left-0 flex h-full w-12 items-center justify-center text-slate-400">
-                                    <span class="material-symbols-outlined text-2xl">person</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-2">
-                            <label class="text-slate-200 text-base font-medium" for="skills">Compétence
-                                principale</label>
-                            <div class="relative flex w-full items-center">
-                                <select
-                                    class="form-select h-12 w-full flex-1 rounded-lg border-slate-700/50 bg-slate-700/30 px-4 pl-12 text-slate-100 focus:border-primary focus:ring-primary"
-                                    id="skills">
-                                    <option selected="">Choisissez votre compétence</option>
-                                    <option value="frontend">Développement Frontend</option>
-                                    <option value="backend">Développement Backend</option>
-                                    <option value="fullstack">Développement Fullstack</option>
-                                    <option value="devops">DevOps</option>
-                                    <option value="ui-design">UI Design</option>
-                                    <option value="ux-design">UX Design</option>
-                                    <option value="data-science">Data Science</option>
-                                    <option value="project-management">Gestion de projet</option>
-                                </select>
-                                <div
-                                    class="pointer-events-none absolute left-0 flex h-full w-12 items-center justify-center text-slate-400">
-                                    <span class="material-symbols-outlined text-2xl">code</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-3">
+                    <div class="flex flex-col gap-2 flex-1 w-full">
+                        <label class="text-slate-200 text-base font-medium" for="avatar-upload">Votre
+                            avatar</label>
+                        <div class="relative">
                             <input
-                                class="form-checkbox h-5 w-5 rounded border-slate-600 bg-slate-700/50 text-primary focus:ring-primary focus:ring-offset-2 focus:ring-offset-slate-800/20"
-                                id="rules-checkbox" type="checkbox" />
-                            <label class="text-slate-300 text-sm" for="rules-checkbox">J'ai lu et j'accepte les <a
-                                    class="font-medium text-primary-light hover:underline" href="#">règles du
-                                    hackathon</a>.</label>
+                                class="block w-full text-sm text-slate-300 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-primary/20 file:text-primary-light hover:file:bg-primary/30 cursor-pointer bg-slate-700/30 rounded-lg"
+                                id="avatar-upload" type="file" />
                         </div>
-                        <button
-                            class="flex h-12 w-full items-center justify-center rounded-lg bg-primary px-6 text-base font-bold text-white shadow-lg shadow-primary/30 transition-colors hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-slate-800/20"
-                            type="submit">
-                            Valider mon inscription
-                        </button>
-                    </form>
+                        <p class="text-xs text-slate-400 mt-1">PNG, JPG, GIF jusqu'à 5MB.</p>
+                    </div>
                 </div>
-            </div>
-        </main>
+                <div class="flex flex-col gap-2">
+                    <label class="text-slate-200 text-base font-medium" for="pseudo">Votre pseudo</label>
+                    <div class="relative flex w-full items-center">
+                        <input
+                            class="form-input h-12 w-full flex-1 rounded-lg border-slate-700/50 bg-slate-700/30 px-4 pl-12 text-slate-100 placeholder:text-slate-400 focus:border-primary focus:ring-primary"
+                            id="pseudo" placeholder="Entrez un pseudo unique" type="text" />
+                        <div
+                            class="pointer-events-none absolute left-0 flex h-full w-12 items-center justify-center text-slate-400">
+                            <span class="material-symbols-outlined text-2xl">person</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label class="text-slate-200 text-base font-medium" for="skills">Compétence
+                        principale</label>
+                    <div class="relative flex w-full items-center">
+                        <select
+                            class="form-select h-12 w-full flex-1 rounded-lg border-slate-700/50 bg-slate-700/30 px-4 pl-12 text-slate-100 focus:border-primary focus:ring-primary"
+                            id="skills">
+                            <option selected="">Choisissez votre compétence</option>
+                            <option value="frontend">Développement Frontend</option>
+                            <option value="backend">Développement Backend</option>
+                            <option value="fullstack">Développement Fullstack</option>
+                            <option value="devops">DevOps</option>
+                            <option value="ui-design">UI Design</option>
+                            <option value="ux-design">UX Design</option>
+                            <option value="data-science">Data Science</option>
+                            <option value="project-management">Gestion de projet</option>
+                        </select>
+                        <div
+                            class="pointer-events-none absolute left-0 flex h-full w-12 items-center justify-center text-slate-400">
+                            <span class="material-symbols-outlined text-2xl">code</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <input
+                        class="form-checkbox h-5 w-5 rounded border-slate-600 bg-slate-700/50 text-primary focus:ring-primary focus:ring-offset-2 focus:ring-offset-slate-800/20"
+                        id="rules-checkbox" type="checkbox" />
+                    <label class="text-slate-300 text-sm" for="rules-checkbox">J'ai lu et j'accepte les <a
+                            class="font-medium text-primary-light hover:underline" href="#">règles du
+                            hackathon</a>.</label>
+                </div>
+                <button
+                    class="flex h-12 w-full items-center justify-center rounded-lg bg-primary px-6 text-base font-bold text-white shadow-lg shadow-primary/30 transition-colors hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-slate-800/20"
+                    type="submit">
+                    Valider mon inscription
+                </button>
+            </form>
+        </div>
     </div>
-
+</main>
