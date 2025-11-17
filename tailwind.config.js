@@ -9,6 +9,9 @@ module.exports = {
         primary: "#7f13ec",
         "background-light": "#f7f6f8",
         "background-dark": "#191022",
+        "card-dark": "#2C1E4A",
+        "text-primary-dark": "#F5F5F5",
+        "text-secondary-dark": "#c992c9",
       },
       fontFamily: {
         display: ["Inter", "sans-serif"],
