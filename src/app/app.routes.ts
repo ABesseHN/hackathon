@@ -5,6 +5,7 @@ import { RegisteredListComponent } from './registered-list/registered-list.compo
 import { TopicsListComponent } from './topics-list/topics-list.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CurrentDashboardComponent } from './current-dashboard/current-dashboard.component';
+import { TeamGeneratorComponent } from './team-generator/team-generator.component';
 
 
 export const routes: Routes = [
@@ -14,4 +15,5 @@ export const routes: Routes = [
     { path: 'registerList', component: RegisteredListComponent },
     { path: 'topicList', component: TopicsListComponent },
     { path: 'dashboard', component: CurrentDashboardComponent },
+    { path: 'teamgenerator', component: TeamGeneratorComponent }
 ];

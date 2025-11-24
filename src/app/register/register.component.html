@@ -1,4 +1,4 @@
-<main class="flex w-full max-w-5xl flex-1 flex-col items-center justify-center p-4 sm:p-6 lg:p-8 z-10">
+<!-- <main class="flex w-full max-w-5xl flex-1 flex-col items-center justify-center p-4 sm:p-6 lg:p-8 z-10">
     <div class="w-full max-w-2xl">
         <div class="text-center mb-10">
             <h1 class="text-slate-50 text-4xl sm:text-5xl font-black tracking-tighter">Rejoignez l'aventure !
@@ -77,4 +77,110 @@
             </form>
         </div>
     </div>
+</main> -->
+
+<main>
+      <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hackathon HN - Inscription</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="text-3xl mb-5 font-bold leading-tight tracking-tighter text-zinc-100 sm:text-4xl md:text-5xl">Inscription au Hackathon HN</h2>
+
+
+      <!-- <form>
+        <input
+          type="text"
+          id="nom"
+          name="nom"
+          placeholder="Votre nom"
+          required
+        />
+        <br />
+
+        <input
+          type="text"
+          id="prenom"
+          name="prenom"
+          placeholder="Votre prénom"
+          required
+        />
+        <br />
+
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Votre email"
+          required
+        />
+        <br />
+        <select id="role" name="role" required>
+          <option value="">Sélectionner un rôle</option>
+          <option value="Business analyste">Business analyste</option>
+          <option value="Chef de Projet">Chef de Projet</option>
+          <option value="Ingénieur sécurité">Ingénieur sécurité</option>
+          <option value="Développeur">Développeur</option>
+        </select>
+        <br />
+        <input id="btn" type="submit" value="Envoyer" />
+      </form> -->
+
+      <!-- <div class="return">
+        <a href="Index.html">          
+          <button id="btn"> Retour </button>
+        </a>
+      </div> -->
+
+    <form [formGroup]="inscriptionForm" (ngSubmit)="onSubmit()">
+
+      <input
+        type="text"
+        formControlName="nom"
+        placeholder="Votre nom"
+        required
+      />
+      <br />
+
+      <input
+        type="text"
+        formControlName="prenom"
+        placeholder="Votre prénom"
+        required
+      />
+      <br />
+
+      <input
+        type="email"
+        formControlName="email"
+        placeholder="Votre email"
+        required
+      />
+      <br />
+
+      <select formControlName="role" required>
+        <option value="">Sélectionner un rôle</option>
+        <option value="Business analyste">Business analyste</option>
+        <option value="Chef de Projet">Chef de Projet</option>
+        <option value="Ingénieur sécurité">Ingénieur sécurité</option>
+        <option value="Développeur">Développeur</option>
+      </select>
+      <br />
+
+      <input id="btn" type="submit" value="Envoyer" />
+    </form>
+
+    <div class="return">
+      <a [routerLink]="['/dashboard']">
+        <button id="btn">Retour</button>
+      </a>
+    </div>
+
+    </div>
+    
+
+   
+  </body>
 </main>

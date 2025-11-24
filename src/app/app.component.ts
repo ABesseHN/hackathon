@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet, RouterLink, Router } from '@angular/router';
 import { NavComponent } from "./nav/nav.component";
 import { FooterComponent } from "./footer/footer.component";
+import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
